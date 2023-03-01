@@ -27,5 +27,15 @@ export interface ISource {
     country: string;
 }
 
+export interface IDrawSource {
+    status: string;
+    sources: ISource[];
+}
+export interface IDrawNews {
+    status: string;
+    totalResults: number;
+    articles: INews[];
+}
+
 const app = new App();
 app.start();
