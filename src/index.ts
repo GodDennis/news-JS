@@ -17,5 +17,15 @@ export interface INews {
     source: Source;
 }
 
+export interface ISource {
+    id: string;
+    name: string;
+    description: string;
+    url: string;
+    category: string;
+    language: string;
+    country: string;
+}
+
 const app = new App();
 app.start();
